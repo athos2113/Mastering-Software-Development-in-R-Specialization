@@ -1,3 +1,20 @@
 # Mastering-Software-Development-in-R-Specialization
 
 ![John Hopkin University Logo](logo.jpg)
+
+[Specialization Link](https://www.coursera.org/specializations/r)
+
+This Specialization covers R software development for building data science tools. As the field of data science evolves, it has become clear that software development skills are essential for producing useful data science results and products. You will obtain rigorous training in the R language, including the skills for handling complex data, building R packages and developing custom data visualizations. You will learn modern software development practices to build tools that are highly reusable, modular, and suitable for use in a team-based environment or a community of developers.
+
+
+## Courses :
+
+**1. The R Programming Environment** : This course provides a rigorous introduction to the R programming language, with a particular focus on using R for software development in a data science setting. Whether you are part of a data science team or working individually within a community of developers, this course will give you the knowledge of R needed to make useful contributions in those settings. As the first course in the Specialization, the course provides the essential foundation of R needed for the following courses. We cover basic R concepts and language fundamentals, key concepts like tidy data and related "tidyverse" tools, processing and manipulation of complex and large datasets, handling textual data, and basic data science tasks. Upon completing this course, learners will have fluency at the R console and will be able to create tidy datasets from a wide range of possible data sources
+
+**2. Advanced R Programming** : This course covers advanced topics in R programming that are necessary for developing powerful, robust, and reusable data science tools. Topics covered include functional programming in R, robust error handling, object oriented programming, profiling and benchmarking, debugging, and proper design of functions. Upon completing this course you will be able to identify and abstract common data analysis tasks and to encapsulate them in user-facing functions. Because every data science environment encounters unique data challenges, there is always a need to develop custom software specific to your organization’s mission. You will also be able to define new data types in R and to develop a universe of functionality specific to those data types to enable cleaner execution of data science tasks and stronger reusability within a team
+
+**3. Building R Packages** : Writing good code for data science is only part of the job. In order to maximizing the usefulness and reusability of data science software, code must be organized and distributed in a manner that adheres to community-based standards and provides a good user experience. This course covers the primary means by which R software is organized and distributed to others. We cover R package development, writing good documentation and vignettes, writing robust software, cross-platform development, continuous integration tools, and distributing packages via CRAN and GitHub. Learners will produce R packages that satisfy the criteria for submission to CRAN.
+
+**4. Building Data Visualization Tools** : The data science revolution has produced reams of new data from a wide variety of new sources. These new datasets are being used to answer new questions in way never before conceived. Visualization remains one of the most powerful ways draw conclusions from data, but the influx of new data types requires the development of new visualization techniques and building blocks. This course provides you with the skills for creating those new visualization building blocks. We focus on the ggplot2 framework and describe how to use and extend the system to suit the specific needs of your organization or team. Upon completing this course, learners will be able to build the tools needed to visualize a wide variety of data types and will have the fundamentals needed to address new data types as they come about
+
+**5. Mastering Software Development in R Capstone**
