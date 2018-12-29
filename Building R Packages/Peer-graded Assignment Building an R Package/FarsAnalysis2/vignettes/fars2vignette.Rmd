@@ -1,0 +1,75 @@
+---
+title: "Using the FarsAnalysis2 Package"
+author: "Junaid Khan "
+date: " 2018-07-12"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The FarAnalysis2 Package reads data from the  US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. You can download the data for this assignment here:     [DATASET](https://d3c33hcgiwev3.cloudfront.net/_e1adac2a5f05192dc8780f3944feec13_fars_data.zip?Expires=1544313600&Signature=iD8PfbEicIpPiJILfjnnlnb0DESg4uoP3a-iL-SLgUdHWvT1GPLUwrPwlh~-yDGoGzXDF3drniA3E0qr1PQidRW9KdBaSddqmMpaBe611s6PtFgRmMTwNalbzX8LBZF-HNi~QITPpOT1ggRxoNBw4--0kaqJYZnp9p3eeAwWXLs_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A) .
+It then performs Basic Analysis on this dataset. The function `fars_function` finds the relevant dataset, manipulates it and maps the places where accidents have occured.
+
+```{r, eval=F}
+library(FarsAnalysis)
+```
+
+## Package Dependencies
+
+The `FarsAnalysis2` package imports packages - `readr`, `dplyr`, `tidyr`.
+It imports functions from packages - `maps`, `read_csv`, `points`.
+
+## Export Functions
+
+The `FarAnalysis2` package comprises of several functions -
+
+- `fars_map_state`
+- `fars_read`
+- `fars_read_years`
+- `fars_summarize_years`
+- `make_filename`
+
+
+## Using the Package
+
+After importing the package, you can use the available functions -
+
+**1. `make_filename` **
+Reads the input year and find the relevant
+dataset for that year. If the approriate year is not written, the
+sprintf function will return an error.It takes a numeric value of the year, used to find the relevant dataset. And, returns A character vector filename.
+
+```{r, eval=F}
+make_filename(2014)
+```
+
+**2. `fars_read_years` **
+Reads the year and finds the csv file matching the same year. If the csv file is not found, 'invalid year' error is displayed.If the year is appropriate,  the csv file is read and mutate a new column with the year and then select the columns MONTH and year.
+A dataset with of the relevant year, with the columns MONTH and year is returned.
+Otherwise, an error 'invalid year' is displayed.
+
+```{r, eval=F}
+fars_read_years(c(2013, 2014)
+```
+
+**3. `fars_summarize_years` **
+The function reads the years as a numeric input.The function will read all the csv files found in the directory, using the `fars_read_years` function and bind them row-wise. It will then group the data based on year and MONTH and summarize the data.
+
+```{r, eval=F}
+ fars_summarize_years(c(2013,2014))
+```
+
+
+**4. `fars_map_state` **
+This function takes the state number and the vector of years as input. It will then find the relevant csv files using the `make_filename` function and will read those csv files using the `fars_read` function. If the state number is not found it will display an error. Otherwise, it will filter the dataset, filtering the data with the
+given state number. It then plots the points where the accidents have occured in that state. If no accidents occured, a message is displayed.
+

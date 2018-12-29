@@ -1,0 +1,21 @@
+Package: FarsAnalysis2
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Date: 2018-12-7
+Imports: readr, dplyr, tidyr, maps, graphics
+Author: Junaid Khan <jrkhan011@gmail.com>
+Maintainer: Junaid Khan <jrkhan011@gmail.com>
+Description: The FarAnalysis Package reads data from the US National
+    Highway Traffic Fatality System, and performs some basic analysis.
+    The function 'fars_function' finds the relevant dataset, manipulates
+    it and maps the places where accidents have occured.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr

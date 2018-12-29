@@ -1,0 +1,19 @@
+##Output for microbenchmark of different factorial functions of 100
+
+Unit: microseconds
+                  expr     min       lq       mean   median        uq      max neval  cld
+   Factorial_loop(100) 778.242 885.1925 1246.94308 996.4100 1129.8140 5028.411   100    d
+ Factorial_reduce(100) 387.414 519.9650  674.54969 601.8855  744.9615 1926.828   100   c 
+   Factorial_func(100)  56.890  66.2765   99.83523  80.7830  114.6315  378.312   100 a   
+    Factorial_mem(100) 191.716 226.1345  381.69700 256.2855  331.6635 7024.074   100  b  
+
+
+
+##Output for microbenchmark of different factorial functions of 1000
+
+Unit: microseconds
+                   expr      min       lq      mean   median        uq        max neval cld
+   Factorial_loop(1000)  833.993  976.499  1189.940 1103.646  1329.495   2735.219   100  a 
+ Factorial_reduce(1000) 1145.174 1388.090  1720.520 1613.086  1923.415   2966.188   100  a 
+   Factorial_func(1000)  671.859 1040.783  1336.344 1261.513  1569.281   2591.860   100  a 
+    Factorial_mem(1000) 5291.238 7763.630 13970.357 9205.479 10849.284 186976.765   100   b
