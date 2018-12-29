@@ -1,0 +1,116 @@
+# Advanced R Programming
+
+This course covers advanced topics in R programming that are necessary for
+developing powerful, robust, and reusable data science tools. Topics covered
+include functional programming in R, robust error handling, object oriented
+programming, profiling and benchmarking, debugging, and proper design
+of functions. Upon completing this course you will be able to identify and
+abstract common data analysis tasks and to encapsulate them in user-facing
+functions. Because every data science environment encounters unique data
+challenges, there is always a need to develop custom software specific to
+your organization’s mission. You will also be able to define new data types
+in R and to develop a universe of functionality specific to those data types to
+enable cleaner execution of data science tasks and stronger reusability within
+a team
+
+The learning objectives of the chapter are:
+* Describe the control flow of an R program
+* Write a function that abstracts a single concept/procedure
+* Describe functional programming concepts
+* Write functional programming code using the purrr package
+* Manipulate R expressions to “compute on the language”
+* Describe the semantics of R environments
+* Implement exception handling routines in R functions
+* Design and Implement a new S3, S4, or reference class with generics and
+methods
+* Apply debugging tools to identify bugs in R programs
+* Apply profiling and timing tools to optimize R code
+* Describe the principles of tidyverse functions
+
+# Swirl Assignments 
+
+During this course we'll be using the swirl software package for R in order to illustrate some key
+concepts. The swirl package turns the R console into an interactive learning environment.
+Using swirl will also give you the opportunity to be completely immersed in an authentic R programming environment.
+
+**1. Install R** : 
+swirl requires R 3.1.0 or later. If you have an older version of R, please update before going any further.
+If you're not sure what version of R you have, type R.version.string at the R prompt. 
+You can download the latest version of R from (https://www.r-project.org/.)
+
+Optional but highly recommended: Install RStudio.
+You can download the latest version of RStudio at (https://www.rstudio.com/products/rstudio/.)
+
+**2. Install Swirl** : 
+Since swirl is an R package, you can easily install it by entering a single command from the R console:
+
+```{r}
+install.packages("swirl")
+```
+
+If you've installed swirl in the past make sure you have version 2.4.2 or later. You can check this with:
+```{r}
+packageVersion("swirl")
+```
+
+**Load swirl** :
+Every time you want to use swirl, you need to first load the package. From the R console:
+
+```{r}
+library(swirl)
+```
+
+** Install the R Programming Environment course** :
+swirl offers a variety of interactive courses, but for our purposes, you want the one called
+The R Programming Environment. Type the following from the R prompt to install this course:
+
+```{r}
+install_course("Advanced R Programming")
+```
+
+**Start swirl and complete the lessons** :
+Type the following from the R console to start swirl:
+```{r}
+swirl()
+```
+
+
+Then, follow the menus and select the R Programming Environment course 
+when given the option. You'll need to complete all of the lessons below.
+
+**Week 1**:
+1. Setting Up Swirl
+2. Functions
+
+**Week 2**:
+1. Functional Programming with purrr
+
+
+**Week 4**:
+
+## Peer-graded Assignment: Functional and Object-Oriented Programming ## :
+The overall purpose of this assessment is to evaluate your ability to apply functional programming 
+and object oriented programming concepts in R. There are two parts to this assignment. 
+The first part compares different functional programming techniques and benchmarks their performance.
+The second part uses object-oriented programming techniques to define a class to represent longitudinal data
+and provide a set of functions for interacting with such data.
+
+**Step-By-Step Assignment Instructions**:
+1. Part 1: Factorial Function :
+>The objective of Part 1 is to write a function that computes the factorial of an integer greater
+than or equal to 0. Recall that the factorial of a number n is n * (n-1) * (n - 2) * … * 1. The factorial of 0 is defined to be 1
+
+>For this Part you will need to write four different versions of the Factorial function:
+>**1. Factorial_loop**: a version that computes the factorial of an integer using looping (such as a for loop)
+>**2. Factorial_reduce**: a version that computes the factorial using the reduce() function in the purrr package. Alternatively, you can use the Reduce() function in the base package.
+>**3. Factorial_func**: a version that uses recursion to compute the factorial.
+>**4. Factorial_mem**: a version that uses memoization to compute the factorial.
+
+>After writing your four versions of the Factorial function, use the **microbenchmark package** to
+>time the operation of these functions and provide a summary of their performance. 
+>In addition to timing your functions for specific inputs, make sure to show a range of
+>inputs in order to demonstrate the timing of each function for larger inputs.
+
+>In order to submit this assignment, please prepare two files:
+>**1. factorial_code.R**: an R script file that contains the code implementing your classes, methods, and generics for the longitudinal dataset.
+>**2. factorial_output.txt**: a text file that contains the results of your comparison of the four different implementations.
