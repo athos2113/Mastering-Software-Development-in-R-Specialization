@@ -28,7 +28,7 @@ The Learning objectives for this section are:
 
 # Before You Start
 Building R packages requires a toolchain that must be in place before you
-begin developing. If you are developing packages that contain only R code,Building R Packages 178
+begin developing. If you are developing packages that contain only R code
 then the tools you need come with R and RStudio. However, if you want to
 build packages with compiled C, C++, or Fortran code (or which to build other
 people’s packages with such code), then you will need to install additional
