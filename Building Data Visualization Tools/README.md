@@ -49,3 +49,10 @@ for Atlantic basin tropical storms since 1988 through the Extended Best Tract da
 at 2005-08-29 12:00:00 UTC, right around the time the storm made landfall.
 
 ![Map Photo](map.png)
+
+For this assessment, you will need to
+
+1. Build a custom geom for ggplot2 that can be used to add the hurricane wind radii chart for a single storm observation to a map (i.e., could be used to recreate the figure shown above).
+2. Use the geom to map the create a map showing the wind radii chart at one observation times for Hurricane Ike, which occurred in September 2008. Use an observation time when the storm was near or over the United States.
+[Hurricane data zip](https://d3c33hcgiwev3.cloudfront.net/_7ed6a595f3e1ac944ccbb1f07db4caae_hurricanes_data.zip?Expires=1546300800&Signature=GqO3XBLACkHrLdxeMMc4I6k1fSzWNmhEXgbOcj3PRho0euMIv~d4MYIyrP2-shdKGnRHuYftG1joJx3umty96YiAKfZYN111ovj9OO1UIIFetP6QceCOfCJl7mQ29vcaFEkhUC7E2zpz2TeCmm6gEIIo986KPuVwGoMgnicRvQI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+
